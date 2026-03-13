@@ -147,3 +147,10 @@ Nanti muncul konfigurasi, scroll ke bawah ke bagian Pipeline, isi:
 - Repository URL: https://github.com/username/repo-kamu
 - Branch: */main
 - Script Path: Jenkinsfile
+Satu yang perlu dicek — repo GitHub kamu public atau private?
+- Public → Credentials biarkan - none - ✅ sudah benar
+- Private → Credentials harus diisi dengan GitHub token
+## Install docker di jenkins
+```
+docker exec -it jenkins bash -c "apt-get update && apt-get install -y docker.io"
+```
